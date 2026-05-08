@@ -2,15 +2,30 @@ class Hello
 {
     public static void main(String args[])
     {
-        int x =800;
-        int y = 610;
-        int z = 95;
+       int n = 3 ;
 
-        if(x > y && x > z)
-            System.out.println(x);
-        else if(y > x && y > z)
-            System.out.println(y);
-        else 
-            System.out.println(z);
+       switch(n){
+        case 1:
+            System.out.println("monday");
+            break;
+        case 2:
+            System.out.println("tuesday");
+            break;
+        case 3:
+            System.out.println("wednesday");
+            break;
+        case 4:
+            System.out.println("thursday");
+            break;
+        case 5:
+            System.out.println("friday");
+            break;
+        case 6:
+            System.out.println("saturday");
+            break;
+        case 7:
+            System.out.println("sunday");
+            break;
+       }
     }
 }
