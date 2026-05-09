@@ -1,15 +1,14 @@
-class Computer
+class Calculator
 {
-    public void playMusic()
+    int num =10;
+    public int add(int n1, int n2)
     {
-        System.out.println("Music Playing...");
+        return n1 + n2;
     }
 
-    public String getMeAPen(int cost)
+    public int add(int n1, int n2, int n3)
     {
-        if(cost >= 12)
-            return "pen";
-        return "Nothing";
+        return n1 + n2 * n3;
     }
 }
 
@@ -18,12 +17,15 @@ public class Hello
 {
     public static void main(String a[])
     {
-       Computer comp = new Computer();
+        int num1 = 50;
+        int num2 = 73;
+        int num3 = 89;
+        Calculator calc = new Calculator();
+        Calculator calc1 = new Calculator();
 
-       comp.playMusic();
 
-       String pen = comp.getMeAPen(10);
+        int result = calc.add(num1, num2, num3);
 
-       System.out.println(pen);
+        System.out.println(calc1.num);
     }
 }
