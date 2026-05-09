@@ -1,29 +1,29 @@
-class Calculator
+class Computer
 {
-    int a;
-
-    public int add(int n1, int n2) 
+    public void playMusic()
     {
-        int r = n1 + n2;
-        return r;
+        System.out.println("Music Playing...");
+    }
+
+    public String getMeAPen(int cost)
+    {
+        if(cost >= 12)
+            return "pen";
+        return "Nothing";
+    }
 }
-}
 
 
-
-public class Hello 
+public class Hello
 {
     public static void main(String a[])
     {
-        int num1 = 9;
-        int num2 = 7;
+       Computer comp = new Computer();
 
-       Calculator calc = new Calculator();
+       comp.playMusic();
 
-       int result = calc.add(num1, num2);
+       String pen = comp.getMeAPen(10);
 
-        // int result = num1 + num2 ;
-
-         System.out.println(result);
+       System.out.println(pen);
     }
 }
