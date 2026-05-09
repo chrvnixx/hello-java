@@ -1,18 +1,29 @@
-class Hello 
+class Calculator
 {
-    public static void main(String args[])
+    int a;
+
+    public int add(int n1, int n2) 
     {
-      
-      
-        // while (n++ < 50)
-        // {
-        //     System.out.println("Hi" + n);
-        // }
+        int r = n1 + n2;
+        return r;
+}
+}
 
-        for(int n=1;n<5;n++)
-        {
-            System.out.println("Hi" + n);
 
-        }
+
+public class Hello 
+{
+    public static void main(String a[])
+    {
+        int num1 = 9;
+        int num2 = 7;
+
+       Calculator calc = new Calculator();
+
+       int result = calc.add(num1, num2);
+
+        // int result = num1 + num2 ;
+
+         System.out.println(result);
     }
 }
