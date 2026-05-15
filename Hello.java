@@ -1,32 +1,45 @@
+class Student
+{
+    String name;
+    int age;
+    int grade;
+
+}
+
 public class Hello
 {
     public static void main(String a[])
     {
-        int nums[][] = new int[4][];
+    
+    
 
-        nums[0] = new int[20];
-        nums[1] = new int[4];
-        nums[2] = new int[16];
-        nums[3] = new int[7];
+       Student s1 = new Student();
+       s1.name ="frank";
+       s1.age = 16;
+       s1.grade = 97;
 
-        for(int i=0;i<4;i++)
-        {
-            for(int j=0;j<nums[i].length;j++)
-            {
-                nums[i][j] = (int) Math.floor(Math.random() * 10);
-                
-            }
-        }
+       Student s2 = new Student();
+       s2.name ="sinatra";
+       s2.age = 12;
+       s2.grade = 80;
 
-        for(int n[]:nums)
-        {
-            for(int m:n)
-            {
-                System.out.print(m + " ");
-            }
-            System.out.println();
-        }
-        
+       Student s3 = new Student();
+       s3.name ="kidA";
+       s3.age = 17;
+       s3.grade = 100;
+
+      Student students[] = new Student[3];
+        students[0] = s1; 
+        students[1] = s2; 
+        students[2] = s3; 
+
+        System.out.println(students[0].name + " : " + students[2].age);
+
+        // for(Student n : students)
+        // {
+        //     System.out.println(n.name + " : " + n.age);
+        // }
+       
     }
 
 }
