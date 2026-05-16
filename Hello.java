@@ -1,17 +1,26 @@
-class Mobile
+class Human
 {
-    String brand;
-    int price;
-    static String name;
+    private String name;
+    private int age;
 
-    public void show()
+    public void  setName(String name)
     {
-        System.out.println(brand + " " + name + " : " + price);
+        this.name = name;
     }
 
-    public static void show1(Mobile phone1)
+    public String getName()
     {
-        System.out.println(phone1.brand + " " + name + " : " + phone1.price);
+        return name;
+    }
+
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
+
+    public int getAge()
+    {
+        return age;
     }
 }
 
@@ -20,23 +29,10 @@ public class Hello
 {
     public static void main(String a[])
     {
-        Mobile phone1 = new Mobile();
-        phone1.brand = "apple";
-        phone1.price = 1200;
-        Mobile.name = "smartphone";
-
-        Mobile phone2 = new Mobile();
-        phone2.brand = "samsung";
-        phone2.price = 1200;
-        Mobile.name = "smartphone";
-
-        Mobile phone3 = new Mobile();
-        phone3.brand = "google pixel";
-        phone3.price = 1200;
-        Mobile.name = "smartphone";
-
-        phone1.show();
-
-        Mobile.show1(phone1);
+        Human pes = new Human();
+        pes.setName("sinatra");
+        pes.setAge(90);
+        System.out.println(pes.getName() + " : " + pes.getAge());
+       
     }
 }
