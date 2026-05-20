@@ -1,14 +1,30 @@
-import java.util.ArrayList;
+class A {
+    public void show()
+    {
+        System.out.println("in a show");
+    }
+}
+ 
+class B extends A 
+{
+    public void show()
+    {
+        System.out.println("in b show");
+    }
+}
+ class C extends A
+ {
 
-import tools.*;
-
+ }
 
 public class Hello
 {
     public static void main(String a[])
     {
-        ArrayList list = new ArrayList();
-        B obj = new B();
-        obj.show();
+       A obj = new C();
+       obj.show();
+
+       obj = new B();
+       obj.show();
     }
 }
