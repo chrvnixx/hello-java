@@ -1,26 +1,6 @@
 import java.util.ArrayList;
 
-class A
-{   
-    public void show()
-    {
-        System.out.println("in a show");
-    }
-    public void config()
-    {
-        System.out.println("in a config");
-    }
-   
-}
-class B extends A
-{   
-   public void show()
-   {
-    System.out.println("in b show");
-   }
-   
-}
-
+import tools.*;
 
 
 public class Hello
