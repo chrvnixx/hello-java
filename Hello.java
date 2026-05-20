@@ -1,53 +1,37 @@
-class Human
-{
-    private String name;
-    private int age;
 
-    public Human()
+class Calc
+{   
+    public int add(int n1, int n2)
     {
-        name = "sinatra";
-        age = 18;
+        return n1 + n2;
     }
-
-    public Human(int a, String n)
+    public int sub(int n1, int n2)
     {
-        age = a;
-        name = n;
-    }
-
-    public void  setName(String name)
-    {
-        this.name = name;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setAge(int age)
-    {
-        this.age = age;
-    }
-
-    public int getAge()
-    {
-        return age;
+        return n1 - n2;
     }
 }
 
+class AdvCalc extends Calc
+{
+    public int multi(int n1, int n2)
+    {
+        return n1 * n2;
+    }
+    public int div(int n1, int n2)
+    {
+        return n1 / n2;
+    }
+}
 
 public class Hello
 {
     public static void main(String a[])
     {
-        Human pes = new Human();
-        Human pes1 = new Human(25, "frank");
-        pes.setName("sinatra");
-        pes.setAge(90);
-        System.out.println(pes.getName() + " : " + pes.getAge());
-        System.out.println(pes1.getName() + " : " + pes1.getAge());
-        
-       
+        AdvCalc obj = new AdvCalc();
+        int r1 = obj.add(10,15);
+        int r2 = obj.sub(90, 18);
+        int r3 = obj.multi(90, 18);
+
+        System.out.println(r1 + " " + r2 + " " + r3);
     }
 }
