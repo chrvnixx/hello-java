@@ -1,30 +1,27 @@
-class A {
-    public void show()
-    {
-        System.out.println("in a show");
-    }
-}
- 
-class B extends A 
+abstract class Car
 {
-    public void show()
+    abstract public void drive();
+    public void playMusic()
     {
-        System.out.println("in b show");
+        System.out.println("playing music...");
     }
 }
- class C extends A
- {
 
- }
+class Benz extends Car
+{
+    public void drive()
+    {
+        System.out.println("driving");
+    }
+}
+
 
 public class Hello
 {
     public static void main(String a[])
     {
-       A obj = new C();
-       obj.show();
-
-       obj = new B();
-       obj.show();
+        Benz obj = new Benz();
+        obj.drive();
+        obj.playMusic();
     }
 }
