@@ -20,7 +20,12 @@ public class Hello
 {
     public static void main(String a[])
     {
-        Benz obj = new Benz();
+        Benz obj = new Benz(){
+            public void drive()
+            {
+                System.out.println("driving...");
+            }
+        };
         obj.drive();
         obj.playMusic();
     }
